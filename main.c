@@ -14,7 +14,6 @@ int main(int argc, char *argv[]) {
    	int fd,re,ch1,ch2,ch3;
    	char buff[size];
    	fd_set rs;
-
 	re=mkfifo(argv[1],FIFO_PERM);
 	if(re==-1)
 	{
@@ -67,7 +66,6 @@ int main(int argc, char *argv[]) {
                 		continue;
                 	}
             		printf("Recieved: %s",buff);
-
 		}
 	}
    return 0;
